@@ -1,0 +1,11 @@
+.container-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: #1976d2 solid 1px;
+}
+
+img {
+  margin-left: 10px;
+  margin-right: 20px;
+}

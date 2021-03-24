@@ -1,0 +1,16 @@
+<div>
+
+    <div *ngFor="let task of myTasks">
+      <app-item-list [task]="task"></app-item-list>
+    </div>
+<br>
+    <div>
+      Nome da tarefa: <input type="text" [(ngModel)]="taskName" name="taskName">
+    </div>
+<br>
+    <div>
+      <app-button [colorButton]="'green'" [textButton]="'Adicionar'" (click)="addTask()"></app-button>
+      <app-button [colorButton]="'red'" [textButton]="'Remover'" (click)="removeTask()"></app-button>
+    </div>
+
+</div>
