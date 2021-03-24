@@ -7,13 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-
-  @Input()
-  textButton: string = 'Clique aki';
-
-  @Input()
-  colorButton: string = 'blue';
-
   constructor() { }
 
   ngOnInit(): void {

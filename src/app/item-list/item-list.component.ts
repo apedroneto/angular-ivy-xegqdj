@@ -7,9 +7,6 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ItemListComponent implements OnInit {
 
-  @Input()
-  task: any = {};
-
   constructor() { }
 
   ngOnInit(): void {

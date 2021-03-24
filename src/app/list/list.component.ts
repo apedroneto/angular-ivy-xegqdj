@@ -7,35 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  myTasks = [
-    {
-      name: 'Arrumar o quarto'
-    },
-    {
-      name: 'Jogar o lixo'
-    },
-    {
-      name: 'Fazer almoço'
-    }
-  ];
-
-  taskName = '';
-
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  addTask(): void {
-    this.myTasks.push({
-      name: this.taskName
-    });
-
-    this.taskName = '';
-  }
-
-  removeTask(): void {
-    this.myTasks = this.myTasks.filter(task => task.name !== this.taskName);
-  }
-
 }
